@@ -3,9 +3,9 @@ package protossunits;
 import race.Protoss;
 import unitproperty.Weapon;
 
-public class Dragoon extends Protoss implements Weapon {
+public final class Dragoon extends Protoss implements Weapon {
 
-    protected Dragoon() {
-        super(3, 15);
+    public Dragoon() {
+        super(3, 15, "Dragoon");
     }
 }

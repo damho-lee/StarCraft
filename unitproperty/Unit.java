@@ -6,14 +6,24 @@ package unitproperty;
 public class Unit {
     private int offensePower;
     private int defensePower;
+    private final String name;
 
-    protected Unit(int offensePower, int defensePower) {
+    protected Unit(int offensePower, int defensePower, String name) {
         this.offensePower = offensePower;
         this.defensePower = defensePower;
+        this.name = name;
     }
 
-    private int getOffensePower() {
+    public int getOffensePower() {
         return this.offensePower;
+    }
+
+    public int getDefensePower() {
+        return this.defensePower;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public boolean getDamage(Unit unit) {
@@ -24,4 +34,5 @@ public class Unit {
         this.defensePower -= unit.getOffensePower();
         return false;
     }
+
 }

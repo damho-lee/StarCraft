@@ -3,9 +3,9 @@ package protossunits;
 import race.Protoss;
 import unitproperty.CanNotFly;
 
-public class Zealot extends Protoss implements CanNotFly {
+public final class Zealot extends Protoss implements CanNotFly {
 
-    protected Zealot() {
-        super(5, 20);
+    public Zealot() {
+        super(5, 20, "Zealot");
     }
 }
